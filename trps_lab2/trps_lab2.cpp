@@ -39,10 +39,21 @@ int main()
 	{
 		for (int j = 0; j < col; j++)
 		{
-			cout << setw(12) << sthArr[i][j];
+			sthArr[i][j] = (i + j)*10/2;
+		}
+		cout << endl;
+	}
+
+
+	for (int i = 0; i < row; i++)
+	{
+		for (int j = 0; j < col; j++)
+		{
+			cout << setw(3) << sthArr[i][j];
 		}
 		cout << endl;
 	}
 	
+	cout << endl << **sthArr << endl;
 
 } 
