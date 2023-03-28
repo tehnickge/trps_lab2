@@ -1,0 +1,9 @@
+#pragma once
+#include <iostream>
+#include <math.h>
+#include <vector>
+#include <cstdlib> 
+#include <random>
+#include <ctime> 
+#include <string>
+#include <iomanip>
