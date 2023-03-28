@@ -16,8 +16,8 @@ int main()
 	cout << "adress_x16: " << p2 << " data: " << *p2 << endl;
 
 	cout << "enter size arr: ";
-	int row;
-	cin >> row;
+	int row, col;
+	cin >> row >> col;
 	int* arr = new int[row];
 
 	for (int i = 0; i < row; i++)
@@ -31,7 +31,18 @@ int main()
 	delete[] arr;
 
 	int** sthArr = new int* [row];
-	for(int i = 0; i < row;)
+	for (int i = 0; i < row; i++)
+	{
+		sthArr[i] = new int[col];
+	}
+	for (int i = 0; i < row; i++)
+	{
+		for (int j = 0; j < col; j++)
+		{
+			cout << setw(12) << sthArr[i][j];
+		}
+		cout << endl;
+	}
 	
 
 } 
